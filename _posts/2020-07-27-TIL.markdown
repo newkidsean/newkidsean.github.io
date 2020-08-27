@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "What happen!!"
+date:   2020-07-27
+categories: jekyll update
+tags: featured
+image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
+---
+1/ 질문할 때 code 를 넣어야 하면
+백팁? '''js
+-----code 넣고---
+''' 로 마무리
+
+2/ Hangout -> 3인 이상이 미팅할 때 필요한 툴
+3/ 
+크롬에서 새창 열고 싶을 때
+-> F12 or Op + Cmmd + i
+
+4/ 변수 : 자료를 담을 수 있다. 어떤 값(value)를 넣으려고 미리 자리 잡아 두었다는 의미이면서, 말 그대로 변할 수 있다.
+
+5/ let : 선언의 의미. 딱 한번만 할 수 있음
+= : 같다 가 아닌, 할당한다. 대입한다 는 의미
+
+6/ Type 마다 다른 속성과 method 가 있다.
+
+- 문자열 : string
+- boolean : true or false 를 판단하는 type
+- 배열 : 여러가지 정보
+ > ex) 'banana', 'apple', 'pineapple' <
+- 객체 : name : 'Steve' / age : 32, ifStudent : true
+- unidenfied 또한 type 의 일종
+- 함수도 type 이다
+
+7/ 함수
+
+- 입력을 받아 출력을 하는 하나의 작은 기능의 단위
+- 지시 사항의 묶음
+- 꼭 수학식이 아니어도 된다
+- JS에서 함수 사용은 꼭 '함수이름' 과 '입력'을 이용해야 함
+- 특별히 함수에서 사용할 입력값을 '매개변수(parameter)' 라고 부름
+- console.log(); 는 실행 명령 일껄...?
+- 전달인자 = arguments
+- 변수에 함수가 담겨있다면, 다른 변수와는 다르게 () 괄호를 붙여서 함수를 실행할 수 있습니다. 또한 입력값을 설정할 수도 있는데요, 이를 전달인자(argument), 줄여서 인자라고 부릅니다.
+```javascript
+let word = speakUp('hello world');
+// 변수 word에 담겨있는 함수 speakUp에 문자열 'hello world'를 인자로 넣어 실행됩니다.
+```
+함수는 아래 첫번째와 같이 함수 선언식으로 선언할 수도 있고, 아니면 함수 표현식을 변수(여기서는 minusOne)에 할당할 수도 있다.
+```javascript
+function plusOne(input1) 
+let minusOne = function (input2)
+```
+- 함수는 return 값을 넣어줘야 결과가 실행 됨. 더불어 return 에 어떤 값을 넣느냐에 따라 실행되는 결과가 달라짐
+
+1/ 문제 풀다 막히면, Mozilla Developer Network 검색해 보기
+
+2/ 아질라? 에 관련된 글 찾아 보기
+
+3/ Google search tip 다시 보기
