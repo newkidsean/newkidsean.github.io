@@ -27,8 +27,9 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 - 문자열 : string
 - boolean : true or false 를 판단하는 type
 - 배열 : 여러가지 정보
- 
- > ex) 'banana', 'apple', 'pineapple' <
+
+  > ex) 'banana', 'apple', 'pineapple' 
+
 - 객체 : name : 'Steve' / age : 32, ifStudent : true
 - unidenfied 또한 type 의 일종
 - 함수도 type 이다
@@ -44,7 +45,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 - 전달인자 = arguments
 - 변수에 함수가 담겨있다면, 다른 변수와는 다르게 () 괄호를 붙여서 함수를 실행할 수 있다. 또한 입력값을 설정할 수도 있는데, 이를 전달인자(argument), 줄여서 인자라고 부른다.
 
-``javascript
+```javascript
 let word = speakUp('hello world');
 // 변수 word에 담겨있는 함수 speakUp에 문자열 'hello world'를 인자로 넣어 실행됩니다.
 ```
