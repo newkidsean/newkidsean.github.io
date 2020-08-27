@@ -6,11 +6,11 @@ gems:
 # Site settings
 title: "I'm thinking"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   아직 블로그 꾸미기는 어려워..
 
 email: cassislagos@gmail.mail
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/sean.png"
 float_logo: true # true, false (default)
 
 # blog cover
@@ -18,7 +18,7 @@ cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
 name: 'Sean'
 author: 'Sean'
-author_image: "/assets/images/author.jpg"
+author_image: "/assets/images/sean.png"
 
 paginate:	5
 
