@@ -4,6 +4,10 @@ title:  "2020.07.28 TIL - 조건문과 문자열 Javascript"
 date:   2020-07-28
 author: Sean
 categories: TIL
+permalink: /posts/
+tags:	TIL javascript
+cover:  "/assets/instacode.png"
+main_nav: true
 ---
 #### 오늘의 학습 목표
 ##### 1/ 조건문

@@ -4,6 +4,10 @@ title:  "2020.07.30 TIL - 배열과 객체 Javascript"
 date:   2020-07-30
 author: Sean
 categories: TIL
+permalink: /posts/
+tags:	TIL javascript
+cover:  "/assets/instacode.png"
+main_nav: true
 ---
 ##### 배열 기초
 - index, element 에 대해 정확히 이해하기
