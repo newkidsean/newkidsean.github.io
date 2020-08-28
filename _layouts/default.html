@@ -3,23 +3,34 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{ page.body_class }}">
 
-    {% include header.html %}
+    {{ content }}
 
-    <!-- content start -->
+    {{ if site.logo}}
+    <a href="{{ site.baseurl | prepend: site.url }}" id="blog_badge">
+            <span style="background-image:
+            url('{{ site.baseurl }}/assets/images/{{ site.logo }}');">{{ site.name }}</span>
+        </a>
+    {{/if}}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    <script>
+      function no_schema_links () {
+        var links = document.querySelectorAll('.js-remove-domain-schema');
+        if (links) {
+          for (i = 0; i < links.length; ++i) {
+            var link = links[i],
+              text = link.innerHTML,
+            no_schema = text.replace(/.*?:\/\//g, "");
+            link.innerHTML = no_schema;
+          }
+        }
+      }
 
-    <!-- content end -->
-
-    {% include footer.html %}
-    {% include javascripts.html %}
-
+      window.onload = function () {
+        no_schema_links();
+      }
+    </script>
   </body>
 
 </html>

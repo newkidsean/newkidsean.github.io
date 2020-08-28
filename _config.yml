@@ -1,63 +1,23 @@
-# Build settings
-gems:
-  - jemoji
-  - jekyll-paginate
-
 # Site settings
-title: "I'm thinking"
-description: > # this means to ignore newlines until "email:"
-   아직 블로그 꾸미기는 어려워..
+title: "Joon: Roon for Jekyll"
+logo: logo.png # image from https://www.flickr.com/photos/lwr/5496279831/in/set-72157594159055823
+email: your-email@domain.com
+description: > # this means to ignore newlines until "url:"
+  Roon was an excellent service, with a beautiful understated design. After
+  being acquired by <a href='https://ghost.org'>Ghost</a>, the Roon theme was
+  open sourced.<br> This is my Jekyll port of the Roon theme.
+url: "http://vormwald.github.io" # the base hostname & protocol for your site
+baseurl: "/joon" # the subpath of your site, e.g. /blog/
+twitter_username: jekyllrb
+github_username:  jekyll
 
-email: cassislagos@gmail.mail
-#blog logo
-logo: "/assets/images/sean.png"
-float_logo: true # true, false (default)
+permalink: pretty
+paginate: 5
 
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
-name: 'Sean'
-author: 'Sean'
-author_image: "/assets/images/sean.png"
-
-paginate:	5
-
-url: "https://newkidsean.github.io/" # the base hostname & protocol for your site
-baseurl: ""
-#used to display twitter cards
-# twitter_handle: '@dirkfabisch'
-
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
-
-#google_analytics: UA-XXXXX-X
-
-# social icons and sharing options
-social:
-#   - icon:	twitter
-#     url:	https://twitter.com/seanbrandnew
-#     desc: Follow me on twitter
-#     share_url: http://twitter.com/share
-#     share_title: ?text=
-#     share_link: "&amp;url="
-
-#   - icon:	facebook
-#     url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/newkidsean
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
