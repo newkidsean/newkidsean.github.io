@@ -10,10 +10,10 @@ cover:  "/assets/instacode.png"
 main_nav: true
 ---
 #### 오늘의 학습 목표
-##### 1/ 조건문
+**1/ 조건문**
 - truty 와 falsy 가 조건문에서 어떻게 작동하는지 알아야 한다고 함
 - 논리 연산자에 대해 이해할 수 있어야 함
-##### 2/ 문자열
+**2/ 문자열**
 - 문자열의 속성과 메소드를 이용해 원하는 형태로 만들 수 있어야 한다고 함
 - 문자열의 length에 대한 이해 : str.length
 - 문자열의 글자 하나하나에 접근 : str[1]
@@ -25,8 +25,8 @@ main_nav: true
 - 문자열 중 원하는 글자가 포함되어 있는지 찾기 :str.includes('a')
   - true false 로 알려 줌 
 
-##### 내가 정리한 노트
-###### 1/ 조건문
+**내가 정리한 노트**
+**1/ 조건문**
 - 어떤 조건을 판별하는 기준을 만드는 것
 - 반드시 비교 연산자(comparison operator)가 필요
 - 조건은 늘 boolean, 늘 true or false 형태
@@ -59,7 +59,7 @@ main_nav: true
 
 - split : \n
 
-###### let 과 var 둘 다 선언인데, 차이점은??
+**let 과 var 둘 다 선언인데, 차이점은??**
 
 - console.log VS return
   - console.log : 단순히 결과값 확인만 할때 사용 
