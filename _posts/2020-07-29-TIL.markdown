@@ -5,7 +5,7 @@ date:   2020-07-29
 author: Sean
 categories: TIL
 permalink: /posts/
-tags:	TIL javascript
+tags: TIL javascript
 cover:  "/assets/instacode.png"
 main_nav: true
 ---
