@@ -4,6 +4,8 @@ title:  "2020.07.27 TIL 드디어 첫 수업 시작"
 date:   2020-07-27
 author: Sean
 categories: TIL
+permalink: /posts/
+main_nav: true
 ---
 1/ 질문할 때 code 를 넣어야 하면
 백팁? '''js
@@ -63,3 +65,25 @@ let minusOne = function (input2)
 2/ 아질라? 에 관련된 글 찾아 보기
 
 3/ Google search tip 다시 보기
+
+{% for category in site.categories %}
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
+  <ul class="posts-list">
+  {% for post in site.categories[cat] %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
+{% endfor %}
+<br>
