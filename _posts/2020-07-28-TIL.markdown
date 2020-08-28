@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "2020.07.28 TIL - 조건문과 문자열 Javascript"
+date:   2020-07-28
+categories: jekyll update
+tags: featured
+image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
+image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+---
+#### 오늘의 학습 목표
+##### 1/ 조건문
+- truty 와 falsy 가 조건문에서 어떻게 작동하는지 알아야 한다고 함
+- 논리 연산자에 대해 이해할 수 있어야 함
+##### 2/ 문자열
+- 문자열의 속성과 메소드를 이용해 원하는 형태로 만들 수 있어야 한다고 함
+- 문자열의 length에 대한 이해 : str.length
+- 문자열의 글자 하나하나에 접근 : str[1]
+- 문자열 + 표시로 합치기 : word1 + " " + word2
+- 문자열에서 원하는 부분을 뽑아 낼 수 있다고 하나, 공부가 필요함. 써보질 않아서 잘 모르겠음 : str.substring(0, 3)
+- 영문을 모두 대/소문자로 바꾸기 : str.toUpperCase / str.toLowerCase
+- 문자열 중 원하는 글자의 index 찾기 :str.indexOf('a')
+  - 자리 번호를 알려 줌 
+- 문자열 중 원하는 글자가 포함되어 있는지 찾기 :str.includes('a')
+  - true false 로 알려 줌 
+
+##### 내가 정리한 노트
+###### 1/ 조건문
+- 어떤 조건을 판별하는 기준을 만드는 것
+- 반드시 비교 연산자(comparison operator)가 필요
+- 조건은 늘 boolean, 늘 true or false 형태
+```javascript
+3 > 5; //false
+9 < 10; //true
+'hello' === 'world'; //false
+```
+
+- === : 같다 / !== : 다르다 -> 꼭 3개 쓰기, 2개 안됨! 예외가 많음.
+
+- and : && / or : ||
+
+- ! : Not 연산자 -> truthy, flasy 여부를 반전시킴
+
+- 논리 연산자 설명은 링크 참조 나중에 넣기
+
+- falsy 값은 은 if 구문에서 실행이 안됨. 이미 false 라.
+ false, null, undefined, 0, Nan, ''(빈 string)
+
+- null : 대부분의 프로그래밍 언어는 null 이라는 특별한 값을 지원한다고 함.
+- var speed = null;
+ 이 값(null)의 의미는 '아무런 값도 나타내지 않는다' 라는 의미이며 다음의 구분과 구분된다고 함.
+ var speed;
+ 즉, null은 어떠한 유효한 값도 아니라는 의미이지 값 자체가 없다는 의미가 아니라고 함. speed 변수는 어떠한 유효한 데이터를 담지 않았을 뿐, null값을 가진다는 의미. 따라서 선언만 하고 값을 할당하지 않은 unidentified 와는 구분됨.
+
+- include : true or false 로 찾음
+
+- CVS : comma separate value -> 근데 뭔뜻..??
+
+- split : \n
+
+###### let 과 var 둘 다 선언인데, 차이점은??
+
+- console.log VS return
+  - console.log : 단순히 결과값 확인만 할때 사용 
+  - return : 함수의 결과값이 담김. return 이 발휘되면 모두 수행했다고 인식하고 그 함수는 종료 됨. 
+
+- 문자열
+ 강의 내용이 너무 심플했어서, 앞으로 계속 구글링 해봐야 할듯 함
